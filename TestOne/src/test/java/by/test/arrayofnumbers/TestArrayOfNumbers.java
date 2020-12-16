@@ -23,4 +23,13 @@ public class TestArrayOfNumbers {
         String expected = "Первый элемен = 0, Второй элемент = 3";
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void whenNumberOnePlusNumberTwoEqualsValueEqualsNine() {
+        int[] array = new int[] {1,2,3,4,5};
+        ArrayOfNumbers arr = new ArrayOfNumbers(array, 9);
+        String result = arr.sum();
+        String expected = "Первый элемен = 3, Второй элемент = 4";
+        assertThat(result, is(expected));
+    }
 }

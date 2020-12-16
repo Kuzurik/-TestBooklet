@@ -14,8 +14,8 @@ public class ArrayOfNumbers {
         int indexTwo = 0;
         int firstNum = 0;
         int secondNum = 0;
-        boolean stop = true;
-        while (stop) {
+        boolean run = true;
+        while (run) {
             int x = number - array[indexOne];
             if (array.length - 1 == indexTwo) {
                 indexOne++;
@@ -27,7 +27,7 @@ public class ArrayOfNumbers {
             if (x == array[indexTwo]) {
                 firstNum = indexOne;
                 secondNum = indexTwo;
-                stop = false;
+                run = false;
             }
         }
         return String.format("Первый элемен = %s, Второй элемент = %s", firstNum, secondNum);
